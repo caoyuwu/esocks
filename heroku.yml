@@ -2,8 +2,10 @@
 # Officially unsupported, but works.
 
 build:
-  docker:
-    web: Dockerfile
+
+# ???通过 heroku-buildpack-0
+#  docker:
+#    web: Dockerfile
   
 run:
-  web: ./esocks -DINBOUND_PORT=$PORT -DINBOUND_PACKAGE=wsheader
+  web: /opt/esocks/esocks -DINBOUND_PORT=$PORT -DINBOUND_PACKAGE=wsheader
