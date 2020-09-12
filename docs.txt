@@ -1,6 +1,6 @@
 1: heroku 部署 需要
    heroku.yml
-     ( heroku-buildpack-0 ??? )
+     ( 使用 heroku-buildpack-0  )
    https://dashboard.heroku.com/apps/esocks-app/deploy/github
    选择 Github 部署, 地址选 https://github.com/caoyuwu/esocks
    ( heroku : 不需要 Dockerfile 文件 ) 
