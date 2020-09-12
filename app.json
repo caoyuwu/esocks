@@ -1,5 +1,5 @@
 {
   "name": "esocks",
-  "description": "ESocks app, which can be deployed to Heroku.",
+  "description": "ESocks app",
   "addons": [ ]
 }

@@ -10,8 +10,13 @@ FROM alpine:latest
 
 # Add our code
 #ADD ./esocks /opt/esocks/
-ADD ./esocks /opt/esocks/esocks
-ADD ./config.json /opt/esocks/config.json
+#ADD ./esocks /opt/esocks/esocks
+#ADD ./config.json /opt/esocks/config.json
+RUN mkdir /opt/esocks
+RUN cd /opt/esocks
+RUN wget -O /opt/esocks/esocks http://www.caoyuwu.top/esocks/linux_amd64/esocks
+RUN wget -O /opt/esocks/config.json http://www.caoyuwu.top/esocks/config.json
+
 WORKDIR /opt/esocks
 
 RUN chmod +x /opt/esocks/esocks
