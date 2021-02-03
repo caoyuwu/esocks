@@ -1,3 +1,5 @@
+0: 项目地址:
+  https://github.com/caoyuwu/esocks
 1: heroku 部署 需要
    heroku.yml
      ( 使用 heroku-buildpack-0  )
