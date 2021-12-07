@@ -10,3 +10,6 @@
 2: Kintohub 部署:
      需要 Dockerfile
    参考  Kintohub.txt  
+   
+3: Okteto.txt
+     
