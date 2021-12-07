@@ -2,6 +2,31 @@
 #参见 https://okteto.com/docs/cloud/okteto-pipeline/
 # kubernetes 目录会自动检测 ,并执行  kubectl apply on the folder.
 #
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: esocks
+  labels:
+    app: esocks
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: esocks
+  template:
+    metadata:
+      labels:
+        app: esocks
+    spec:
+      containers:
+      - name: esocks
+        image: caoyuwu/esocks
+        ports:
+        - containerPort: 80
+
+---
+
 apiVersion: v1
 kind: Service
 metadata:
@@ -14,25 +39,4 @@ spec:
   - port: 80
   selector:
     app: esocks
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: esocks
-  labels:
-    app: esocks
-spec:
-  replicas: 3
-  selector:
-    matchLabels:
-      app: esocks
-  template:
-    metadata:
-      labels:
-        app: esocks
-    spec:
-      containers:
-      - name: esocks
-        image: caoyuwu/esocksxx
-        ports:
-        - containerPort: 80
+
