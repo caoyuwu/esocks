@@ -11,5 +11,6 @@
      需要 Dockerfile
    参考  Kintohub.txt  
    
-3: Okteto.txt
-     
+3: Okteto
+   使用 kubernetes/* 部署
+      不需要 Dockerfile
