@@ -1,0 +1,4 @@
+#
+# okteto 部署使用
+#
+kubectl apply -f okteto/esocks-app.yaml
