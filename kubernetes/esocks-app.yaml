@@ -33,6 +33,6 @@ spec:
     spec:
       containers:
       - name: esocks
-        image: caoyuwu/esocks
+        image: caoyuwu/esocksxx
         ports:
         - containerPort: 80
