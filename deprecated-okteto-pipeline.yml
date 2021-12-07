@@ -1,0 +1,7 @@
+#
+# okteto 部署使用
+# 参见 https://okteto.com/docs/cloud/okteto-pipeline/
+#   2 kubernetes 目录会自动检测, 不需要该文件   
+#
+deploy:
+  - kubectl apply -f okteto/esocks-app.yaml

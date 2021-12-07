@@ -1,5 +1,0 @@
-#
-# okteto 部署使用
-#
-deploy:
-  - kubectl apply -f okteto/esocks-app.yaml
