@@ -20,6 +20,7 @@ RUN wget -O /opt/esocks/config.json http://caoyuwu.eu.org/esocks/config.json
 WORKDIR /opt/esocks
 
 RUN chmod +x /opt/esocks/esocks
+RUN chmod +x /opt/esocks/start-esocks.sh
 
 # Run the image as a non-root user
 RUN adduser -D caoyuwu
@@ -27,4 +28,9 @@ USER caoyuwu
 
 # Run the app.  CMD is required to run on Heroku
 # $PORT is set by Heroku			
-CMD ./esocks 
+
+ENTRYPOINT ["/opt/esocks/start-esocks.sh"]
+#CMD ./esocks 
+CMD source /opt/esocks/start-esocks.sh
+
+
