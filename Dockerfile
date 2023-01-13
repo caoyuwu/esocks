@@ -24,8 +24,8 @@ RUN chmod +x /opt/esocks/esocks
 RUN chmod +x /opt/esocks/start-esocks.sh
 
 # Run the image as a non-root user
-RUN adduser -D caoyuwu
-USER caoyuwu
+#RUN adduser -D caoyuwu
+#USER caoyuwu
 
 # Run the app.  CMD is required to run on Heroku
 # $PORT is set by Heroku			
