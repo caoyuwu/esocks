@@ -28,6 +28,11 @@ USER root
 #RUN adduser -D caoyuwu
 #USER caoyuwu
 
+#
+# Droprax 需要 80端口
+#
+EXPOSE 80
+
 # Run the app.  CMD is required to run on Heroku
 # $PORT is set by Heroku			
 
