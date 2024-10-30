@@ -1,1 +1,1 @@
-web: ./esocks -DINBOUND_PORT=$PORT -DINBOUND_PACKAGE=wsheader
+web: ./esocks -DINBOUND_PORT=$PORT 

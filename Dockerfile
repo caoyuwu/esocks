@@ -14,9 +14,9 @@ FROM alpine:latest
 #ADD ./config.json /opt/esocks/config.json
 RUN mkdir /opt/esocks
 RUN cd /opt/esocks
-RUN wget -O /opt/esocks/esocks http://caoyuwu.eu.org/esocks/linux_amd64/esocks
-RUN wget -O /opt/esocks/config.json http://caoyuwu.eu.org/esocks/config.json
-RUN wget -O /opt/esocks/start-esocks.sh http://caoyuwu.eu.org/esocks/start-esocks.sh
+RUN wget -O /opt/esocks/esocks https://caoyuwu.eu.org/esocks/linux_amd64/esocks
+RUN wget -O /opt/esocks/config.json https://caoyuwu.eu.org/esocks/config.json
+RUN wget -O /opt/esocks/start-esocks.sh https://caoyuwu.eu.org/esocks/start-esocks.sh
 
 WORKDIR /opt/esocks
 

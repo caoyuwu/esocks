@@ -1,5 +1,5 @@
 #
-#参见 https://okteto.com/docs/cloud/okteto-pipeline/
+# 参见 https://okteto.com/docs/cloud/okteto-pipeline/
 # kubernetes 目录会自动检测 ,并执行  kubectl apply on the folder.
 #
 
